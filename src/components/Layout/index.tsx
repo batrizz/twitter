@@ -2,11 +2,8 @@ import { ReactNode } from 'react'
 
 import Main from '../Main'
 import MenuBar from '../MenuBar'
+import SideBar from '../SideBar'
 import { Container, Wrapper } from './styles'
-
-interface LayoutProps {
-  children: ReactNode
-}
 
 function Layout() {
   return (
@@ -14,7 +11,7 @@ function Layout() {
       <Wrapper>
         <MenuBar />
         <Main />
-        {/* <SideBar /> */}
+        <SideBar />
       </Wrapper>
     </Container>
   )
